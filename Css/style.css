@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-box1 {
+  width: 100px;
+  height: 100px;
+  background-color: #2b0522;
+  margin-bottom: 10px;
+}
+
+.color-box2 {
+  width: 100px;
+  height: 100px;
+  background-color: #03056d;
+  margin-bottom: 10px;
+}
+
+.color-box3 {
+  width: 100px;
+  height: 100px;
+  background-color: #86b4a9;
+  margin-bottom: 10px;
+}
+
+.color-box4 {
+  width: 100px;
+  height: 100px;
+  background-color: #163016;
+  margin-bottom: 10px;
+}
+
+.color-box5 {
+  width: 100px;
+  height: 100px;
+  background-color: #a73434;
+  margin-bottom: 10px;
+}
+
+.color-box6 {
+  width: 100px;
+  height: 100px;
+  background-color: #04c253;
+  margin-bottom: 10px;
+}
+
+.color-box7 {
+  width: 100px;
+  height: 100px;
+  background-color: #a311dd;
+  margin-bottom: 10px;
+}
+
+.color-box8 {
+  width: 100px;
+  height: 100px;
+  background-color: #1899c0;
+  margin-bottom: 10px;
+}
+
+.color-box9 {
+  width: 100px;
+  height: 100px;
+  background-color: #e9b629;
+  margin-bottom: 10px;
+}
+
+.paleta-de-colores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, #5fa8b5, #011c40);
+  color: white;
+  padding: 20px;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 200px;
+}
+
+
+
+
+.Menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.Menu a:hover {
+  opacity: 1;
+}
+
+
+main section {
+  margin-bottom: 30px;
+}
+
+
+.contenedor-controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  font-family: playfair display, serif;
+}
+
+.contenedor-controles section {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+
+.paleta-de-colores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+
+.paleta-de-colores section {
+  width: 160px;
+  height: 300px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+
+
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.5),
+    -5px -5px 15px rgba(255, 255, 255, 0.05);
+
+  transition: 0.3s ease;
+}
+
+.paleta-de-colores section:hover {
+  transform: translateY(-10px);
+}
+
+
+.paleta-de-colores div {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.paleta-de-colores .color-texto {
+  position: absolute;
+  bottom: 25px;
+  left: 8px;
+  width: 85%;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.4s ease;
+  word-break: break-all;
+}
+
+
+button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #54acbf 0%, #26658c 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 8px 20px rgba(84, 172, 191, 0.3);
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+
+
+button:hover {
+  background: linear-gradient(135deg, #26658c 0%, #1a4d63 100%);
+  box-shadow: 0 15px 35px rgba(84, 172, 191, 0.4);
+  transform: translateY(-3px);
+}
+
+button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(84, 172, 191, 0.3);
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+
+.paleta-de-colores h2 {
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.icono-lock {
+  position: absolute;
+  top: 40px;
+  left: 65px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.icono-lock:hover {
+  transform: scale(1.1);
+}
+
+.bloqueado {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.6),
+    8px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+[class^="color-"]{
+  transition:
+    background-color 0.4s ease,
+    transform 0.2s ease;
+} 
+
+
+
+
+
