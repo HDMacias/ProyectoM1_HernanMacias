@@ -136,7 +136,7 @@ boton.addEventListener("click", function () {
 const cajasColores = document.querySelectorAll('[id^="color"]');
 
 cajasColores.forEach((caja, index) => {
-  caja.addEventListener("click", function () {
+  caja.addEventListener("click", function (e) {
     const textoColor = document.querySelector(`#nombre-color${index + 1}`);
 
     if (!textoColor.textContent) return;
@@ -165,7 +165,6 @@ paletas.forEach((paleta) => {
 
   icono.addEventListener("click", function (e) {
     e.stopPropagation();
-
     paleta.classList.toggle("bloqueado");
 
     if (paleta.classList.contains("bloqueado")) {
